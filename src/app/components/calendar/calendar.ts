@@ -1331,10 +1331,11 @@ export class Calendar implements AfterViewInit,AfterViewChecked,OnInit,OnDestroy
         
         this.pm = (ampm === 'PM' || ampm === 'pm');
         let time = this.parseTime(timeString);
+        let hour = !this.pm && time.hour === 12 ? 0 : time.hour;
         if (!this.utc)
-            value.setHours(time.hour);
+            value.setHours(hour);
         else
-            value.setUTCHours(time.hour);
+            value.setUTCHours(hour);
     
         value.setMinutes(time.minute);
         value.setSeconds(time.second);
