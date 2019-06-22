@@ -1,14 +1,16 @@
 {
+    "main": "dist/primeng/main.js",
     "name": "primeng-ah",
     "version": "6.0.0-AH",
     "license": "MIT",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "prepare": "npm run build",
+        "build": "webpack src/main.ts dist/primeng/main.js"
     },
     "repository": {
         "type": "git",
