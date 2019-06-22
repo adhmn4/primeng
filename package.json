@@ -7,8 +7,7 @@
         "start": "ng serve",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e",
-        "prepare": "npm run build"
+        "e2e": "ng e2e"
     },
     "repository": {
         "type": "git",
