@@ -5,7 +5,7 @@
 /aot
 
 # source
-src
+#src
 
 # test
 e2e
