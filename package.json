@@ -10,7 +10,7 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "prepare": "npm run build",
-        "build": "webpack src/main.ts dist/primeng/main.js"
+        "build": "webpack src/main.ts main.js"
     },
     "repository": {
         "type": "git",
