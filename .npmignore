@@ -1,11 +1,11 @@
 # compiled output
-/dist
+#/dist
 /tmp
 /out-tsc
 /aot
 
 # source
-#src
+src
 
 # test
 e2e
